@@ -1,3 +1,7 @@
+<div data-alert class="alert-box alert radius">
+  Сайт находится в состоянии разработки, не судите строго &mdash; скоро всё поменяется ;)
+  <a href="#" class="close">&times;</a>
+</div>
 <!--.page -->
 <div role="document" class="page">
   <div class="wrap-main">
@@ -219,17 +223,17 @@
     <div class="large-6 columns">
       <div class="vcard">
         <div>
-          <span class="category fn org">category fn org</span>
+          <span class="category fn org">Компания Kitchen Project</span>
        </div>
        <div class="adr">
-          <span class="country-name">country-name</span>,
-          <span class="postal-code">postal-code</span>,
-          <span class="locality">locality (city)</span>,
-          <span class="street-address">street-address</span>
+          <span class="country-name">Россия</span>,
+          <span class="postal-code">197342</span>,
+          <span class="locality">Санкт-Петербург</span>,
+          <span class="street-address">ул. Белоостровская 17</span>
        </div>
-       <div>Телефон: <span class="tel">tel</span>, <span class="tel">tel</span></div>
+       <div>Телефон: <span class="tel">+7 (812) 926-12-55</span></div>
         <span class="url">
-          <span class="value-title" title="http://example.com">url</span>
+          <span class="value-title" title="http://kpgroup.ru">kpgroup.ru</span>
         </span>
       </div>
     </div>

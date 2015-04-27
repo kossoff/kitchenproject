@@ -49,10 +49,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"> <!--<![endif]-->
 <head>
   <?php print $head; ?>
-  <meta name="geo.region" content="" />
-  <meta name="geo.placename" content="" />
-  <meta name="geo.position" content="" />
-  <meta name="ICBM" content="" />
+  <meta name="yandex-verification" content="7ce218f3abb437c3">
+  <meta name="wmail-verification" content="cb8e7bc68abe7342341c9a1b4e27b43e">
+  <meta name="msvalidate.01" content="D99F9EF3C148C438BA5D93CD4D1B74D4">
+  <meta name="DC.title" content="Kitchen Project" />
+  <meta name="geo.region" content="RU-SPE" />
+  <meta name="geo.placename" content="Санкт-Петербург" />
+  <meta name="geo.position" content="59.987219;30.320597" />
+  <meta name="ICBM" content="59.987219, 30.320597" />
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
