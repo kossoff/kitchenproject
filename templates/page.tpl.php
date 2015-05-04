@@ -231,7 +231,9 @@
           <span class="locality">Санкт-Петербург</span>,
           <span class="street-address">ул. Белоостровская 17</span>
        </div>
-       <div>Телефон: <span class="tel">+7 (812) 926-12-55</span></div>
+       <div>Телефон:
+        <span class="tel">+7 (812) 386-99-25</span> (офис),
+        <span class="tel">+7 (812) 926-12-55</span></div>
         <span class="url">
           <span class="value-title" title="http://kpgroup.ru">kpgroup.ru</span>
         </span>
