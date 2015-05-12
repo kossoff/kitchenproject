@@ -124,54 +124,83 @@ body {
   background: url('../images/kph.jpg');
 
   header {
-    background: transparent url("../images/frying_pans.jpg") no-repeat scroll 50% 50% / cover;
-    min-height: 500px;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
+    nav {
+      box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
-
-    ul.title-area {
-      h1 a {
-        text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+      ul.title-area {
+        h1 a {
+          text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+        }
       }
     }
-    .cover-wrap {
-      padding-top:120px;
 
-      .contacts {
-        background: rgba(255, 255, 255, 0.15);
-        color: $tuatara;
-        font-size:.8rem;
-        padding:.8rem;
-      }
+    .cover-wrap {
+      padding-top:40px;
     }
 
     .site-name-wrap {
       background: rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
       display: inline-block;
-      padding:.5rem 1rem;
-    }
+      padding: .5rem 2rem;
 
-    h1.site-name {
+      &,
+      #page-title,
       a {
         color: white;
-        font-size: 4rem;
-        font-weight: bold;
-        letter-spacing: .8rem;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
       }
     }
+  }
 
-    h2.site-slogan {
-      color: white;
-      font-size:1.2rem;
-      font-family: $body-font-family;
-      font-weight: normal;
-      letter-spacing: .3rem;
-      text-transform: lowercase;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  &.front,
+  &.page-node-1,
+  &.page-node-2,
+  &.page-node-3,
+  &.page-node-4,
+  &.page-node-5 {
+    header {
+      box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+
+      min-height: 500px;
+      height: auto;
+      max-width: 100%;
+      vertical-align: middle;
+
+      .cover-wrap {
+        padding-top:120px;
+
+        .contacts {
+          background: rgba(255, 255, 255, 0.15);
+          color: $tuatara;
+          font-size:.8rem;
+          padding:.8rem;
+        }
+      }
+
+      .site-name-wrap {
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      h1.site-name {
+        a {
+          color: white;
+          font-size: 4rem;
+          font-weight: bold;
+          letter-spacing: .8rem;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+        }
+      }
+
+      h2.site-slogan {
+        color: white;
+        font-size:1.2rem;
+        font-family: $body-font-family;
+        font-weight: normal;
+        letter-spacing: .3rem;
+        text-transform: lowercase;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+      }
     }
   }
 
@@ -201,6 +230,37 @@ body {
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
     padding-top: 1rem;
+  }
+}
+
+body.front,
+body.page-node-1 {
+  header {
+    background: transparent url("../images/frying_pans.jpg") no-repeat scroll 50% 50% / cover;
+  }
+}
+
+body.page-node-2 {
+  header {
+    background: transparent url("../images/furniture.jpg") no-repeat scroll 50% 50% / cover;
+  }
+}
+
+body.page-node-3 {
+  header {
+    background: transparent url("../images/gear.jpg") no-repeat scroll 50% 50% / cover;
+  }
+}
+
+body.page-node-4 {
+  header {
+    background: transparent url("../images/engineering.jpg") no-repeat scroll 50% 50% / cover;
+  }
+}
+
+body.page-node-5 {
+  header {
+    background: transparent url("../images/service.jpg") no-repeat scroll 50% 50% / cover;
   }
 }
 
