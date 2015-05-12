@@ -1,13 +1,12 @@
-<div data-alert class="alert-box alert radius">
+<!-- <div data-alert class="alert-box alert radius">
   Сайт находится в состоянии разработки, не судите строго &mdash; скоро всё поменяется ;)
   <a href="#" class="close">&times;</a>
-</div>
+</div> -->
 <!--.page -->
 <div role="document" class="page">
   <div class="wrap-main">
     <!--.l-header -->
     <header role="banner" class="l-header">
-
       <?php if ($top_bar): ?>
         <!--.top-bar -->
         <?php if ($top_bar_classes): ?>
@@ -17,14 +16,12 @@
           <ul class="title-area">
             <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
             <li class="toggle-topbar menu-icon">
-              <a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
+              <a href="#"><span><?php print $top_bar_menu_text; ?></span></a>
+            </li>
           </ul>
           <section class="top-bar-section">
             <?php if ($top_bar_main_menu) : ?>
               <?php print $top_bar_main_menu; ?>
-            <?php endif; ?>
-            <?php if ($top_bar_secondary_menu) : ?>
-              <?php print $top_bar_secondary_menu; ?>
             <?php endif; ?>
           </section>
         </nav>
@@ -33,6 +30,19 @@
         <?php endif; ?>
         <!--/.top-bar -->
       <?php endif; ?>
+      <div class="cover-wrap text-center">
+        <?php
+          // <div class="clearfix columns contacts">
+          //   <div class="left"><i class="fi-marker"></i>&nbsp;Россия, 197342, Санкт-Петербург, ул. Белоостровская 17</div>
+          //   <div class="right"><i class="fi-telephone"></i>&nbsp;+7 (812) 386-99-25</div>
+          // </div>
+        ?>
+        <div class="site-name-wrap">
+          <h1 class="site-name"><?php print $linked_site_name; ?></h1>
+          <h2 title="<?php print $site_slogan; ?>" class="text-center site-slogan"><?php print $site_slogan; ?></h2>
+        </div>
+      </div>
+
 
       <!-- Title, slogan and menu -->
       <?php if ($alt_header): ?>
@@ -129,7 +139,7 @@
 
         <a id="main-content"></a>
 
-        <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+<!--         <?php if ($breadcrumb): print $breadcrumb; endif; ?> -->
 
         <?php if ($title): ?>
           <?php print render($title_prefix); ?>
