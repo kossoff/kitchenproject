@@ -37,7 +37,12 @@
           //   <div class="right"><i class="fi-telephone"></i>&nbsp;+7 (812) 386-99-25</div>
           // </div>
         ?>
-        <div class="site-name-wrap">
+        <div class="site-name-wrap
+        <?php
+          if ( isset ($node) )
+            if ($node->type == 'hardware')
+              print 'hide';
+        ?>">
           <div class="site-name"><?php print $linked_site_name; ?></div>
           <div title="<?php print $site_slogan; ?>" class="text-center site-slogan"><?php print $site_slogan; ?></div>
           <hr />
@@ -46,6 +51,7 @@
             <h1 id="page-title" class="title"><?php print $title; ?></h1>
             <?php print render($title_suffix); ?>
           <?php endif; ?>
+
         </div>
       </div>
 
@@ -104,8 +110,8 @@
 
         <a id="main-content"></a>
 
-<!--         <?php if ($breadcrumb): print $breadcrumb; endif; ?> -->
-
+<!--          <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+ -->
         <?php if (!empty($tabs)): ?>
           <?php print render($tabs); ?>
           <?php if (!empty($tabs2)): print render($tabs2); endif; ?>

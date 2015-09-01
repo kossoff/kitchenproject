@@ -38,3 +38,33 @@ function kitchenproject_links__topbar_main_menu($variables) {
   $variables['attributes']['class'][] = 'right';
   return '<ul' . drupal_attributes($variables['attributes']) . '>' . $output . '</ul>';
 }
+
+function kitchenproject_field__taxonomy_term_reference($variables) {
+  $output = '';
+
+  // Render the label, if it's not hidden.
+  if (!$variables['label_hidden']) {
+    $output .= '<span class="field-label">' . $variables['label'] . ':&nbsp;</span>';
+  }
+
+  // Render the items.
+  $output .= ($variables['element']['#label_display'] == 'inline') ? '<span class="links links-inline">' : '<span class="links">';
+
+  $items_total = count($variables['items']);
+  $items_counter = 1;
+  foreach ($variables['items'] as $delta => $item) {
+    $output .= '<span class="taxonomy-term-reference-' . $delta . '"' . $variables['item_attributes'][$delta] . '>' . drupal_render($item) . '</span>';
+
+    if ($items_counter < $items_total){
+      $output .= ", ";
+      $items_counter++;
+    }
+  }
+  $output .= '</span>';
+
+  // Render the top-level DIV.
+  // $output = '<span class="' . $variables['classes'] . (!in_array('clearfix', $variables['classes_array']) ? ' clearfix' : '') . '">' . $output . '</span>';
+  $output = '<span class="' . $variables['classes'] . '">' . $output . '</span>';
+
+  return $output;
+}
