@@ -1375,7 +1375,7 @@ $list-style-position: inside;
 // Background color for the top bar
 // $topbar-bg-color: $oil;
 // $topbar-bg: $topbar-bg-color;
-$topbar-bg-color: rgba(255, 255, 255, 0.35);
+$topbar-bg-color: rgba(255, 255, 255, 0.5);
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1426,7 +1426,7 @@ $topbar-link-color-active-hover: lighten(black, 10%); // orig -  $white;
 $topbar-link-font-size: 1rem; // orig - rem-calc(13);
 $topbar-link-bg: rgba(255, 255, 255, 0);
 $topbar-link-bg-color-hover: lighten(black, 10%); // orig - $charcoal;
-$topbar-link-bg-hover: darken(white, 3%); //orig - $oil;
+$topbar-link-bg-hover: rgba(255, 255, 255, 0.4); //orig - $oil;
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;

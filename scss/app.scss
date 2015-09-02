@@ -126,7 +126,6 @@ body {
   header {
     nav {
       box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
-
       ul.title-area {
         h1 a {
           text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
@@ -141,8 +140,11 @@ body {
     .site-name-wrap {
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+
       display: inline-block;
       padding: .5rem 2rem;
+      position: relative;
+      z-index: 1;
 
       &,
       #page-title,
@@ -172,8 +174,25 @@ body {
       max-width: 100%;
       vertical-align: middle;
 
+      &:before {
+        position: absolute;
+        content:" ";
+        top:0;
+        left:0;
+        width:100%;
+        height: 500px;
+        display: block;
+        z-index:0;
+        background-color: rgba(0, 0, 0, 0.45);
+      }
+
       .cover-wrap {
         padding-top:120px;
+
+        .site-name-wrap {
+          background: none;
+          box-shadow: none;
+        }
 
         .contacts {
           background: rgba(255, 255, 255, 0.15);
@@ -181,10 +200,6 @@ body {
           font-size:.8rem;
           padding:.8rem;
         }
-      }
-
-      .site-name-wrap {
-        background: rgba(0, 0, 0, 0.5);
       }
 
       h1.site-name {
@@ -273,7 +288,8 @@ body.page-node-3 {
 
 body.page-node-4 {
   header {
-    background: transparent url("../images/engineering.jpg") no-repeat scroll 50% 50% / cover;
+    background-image: url("../images/engineering.jpg");
+    background-size: cover;
   }
 }
 
