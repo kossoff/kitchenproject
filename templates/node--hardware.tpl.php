@@ -94,22 +94,39 @@
   hide($content['field_product_main_photo']);
   hide($content['field_price']);
   hide($content['field_product_status']);
+  hide($content['field_product_height']);
+  hide($content['field_product_width']);
+  hide($content['field_product_depth']);
   hide($content['field_catalog']);
   ?>
   <div class="row">
+    <div class="large-12 columns">
+      <?php
+        print render($content['field_catalog']);
+        print '<h1 id="page-title">' . $title . '</h1>';
+      ?>
+    </div>
     <div class="large-4 columns">
       <?php print render($content['field_product_main_photo']); ?>
     </div>
-    <div class="large-8 columns">
+    <div class="large-4 columns">
+      <h3>Характеристики</h3>
       <?php
-        print '<h1 id="page-title">' . $title . '</h1>';
-        print render($content['field_catalog']);
+        print render($content['field_product_height']);
+        print render($content['field_product_width']);
+        print render($content['field_product_depth']);
+      ?>
+    </div>
+    <div class="large-4 columns">
+    <h3>Товар</h3>
+      <?php
         print render($content['field_product_article']);
         print render($content['field_price']);
         print render($content['field_product_status']);
       ?>
     </div>
     <div class="large-12 columns">
+      <h2>Описание</h2>
       <?php print render($content); ?>
     </div>
   </div>
