@@ -92,7 +92,7 @@
   hide($content['links']);
   hide($content['field_product_article']);
   hide($content['field_product_main_photo']);
-  hide($content['field_price']);
+  hide($content['field_price_eu']);
   hide($content['field_product_status']);
   hide($content['field_product_height']);
   hide($content['field_product_width']);
@@ -121,7 +121,7 @@
     <h3>Товар</h3>
       <?php
         print render($content['field_product_article']);
-        print render($content['field_price']);
+        print render($content['field_price_eu']);
         print render($content['field_product_status']);
       ?>
     </div>
