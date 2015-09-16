@@ -14,7 +14,7 @@
         <?php endif; ?>
         <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
           <ul class="title-area">
-            <li class="name"><a href="/"><img class="hide-for-small hide-for-touch" src="<?php print path_to_theme(); ?>/images/logo.png" /></a></li>
+            <li class="name"><a href="/"><img class="hide-for-small hide-for-touch" src="/<?php print path_to_theme(); ?>/images/logo.png" /></a></li>
             <li class="toggle-topbar menu-icon">
               <a href="#"><span><?php print $top_bar_menu_text; ?></span></a>
             </li>
