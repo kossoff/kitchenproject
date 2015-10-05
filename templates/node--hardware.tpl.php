@@ -121,7 +121,7 @@
     <h3>Товар</h3>
       <?php
         print render($content['field_product_article']);
-        print render($content['field_price_eu']);
+        print render($content['field_price_ru']);
         print render($content['field_product_status']);
       ?>
     </div>
