@@ -98,12 +98,13 @@
   hide($content['field_product_width']);
   hide($content['field_product_depth']);
   hide($content['field_catalog']);
+  hide($content['field_name']);
   ?>
   <div class="row">
     <div class="large-12 columns">
       <?php
         print render($content['field_catalog']);
-        print '<h1 id="page-title">' . $title . '</h1>';
+        print '<h1 id="page-title">' . $node->field_name['und'][0]['value'] . '&ensp;' . $title . '</h1>';
       ?>
     </div>
     <div class="large-4 columns">
