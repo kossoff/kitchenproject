@@ -77,9 +77,6 @@
 @import "../../zurb_foundation/scss/foundation/components/offcanvas";
 @import "../../zurb_foundation/scss/foundation/components/visibility";
 
-// Comment out this import if you don't want to use Bourbon, a replacement for Compass mixins.
-@import "bourbon";
-
 // Import our mixins early so they can be used by other partials.
 // Optional.
 //@import "base/mixins";
@@ -165,7 +162,18 @@ body {
   &.page-node-2,
   &.page-node-3,
   &.page-node-4,
-  &.page-node-5 {
+  &.page-node-5,
+  &.page-taxonomy-term-2,
+  &.page-taxonomy-term-3,
+  &.page-taxonomy-term-4,
+  &.page-taxonomy-term-5,
+  &.page-taxonomy-term-6,
+  &.page-taxonomy-term-7,
+  &.page-taxonomy-term-9,
+  &.page-taxonomy-term-10,
+  &.page-taxonomy-term-11,
+  &.page-taxonomy-term-79,
+  &.page-taxonomy-term-150 {
     header {
       box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 
@@ -266,6 +274,7 @@ body {
     background: rgba(255, 255, 255, 0.5) none repeat scroll 0% 0%;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
   }
+
   footer {
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
@@ -273,35 +282,70 @@ body {
   }
 }
 
-body.front,
-body.page-node-1 {
-  header {
+header {
+  body.front &,
+  body.page-node-1 & {
     background: transparent url("../images/frying_pans.jpg") no-repeat scroll 50% 50% / cover;
   }
-}
 
-body.page-node-2 {
-  header {
+  body.page-node-2 & {
     background: transparent url("../images/furniture.jpg") no-repeat scroll 50% 50% / cover;
   }
-}
 
-body.page-node-3 {
-  header {
+  body.page-node-3 & {
     background: transparent url("../images/gear.jpg") no-repeat scroll 50% 50% / cover;
   }
-}
 
-body.page-node-4 {
-  header {
-    background-image: url("../images/engineering.jpg");
-    background-size: cover;
+  body.page-node-4 & {
+    background: transparent url("../images/engineering.jpg") no-repeat scroll 50% 50% / cover;
   }
-}
 
-body.page-node-5 {
-  header {
+  body.page-node-5 & {
     background: transparent url("../images/service.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-2 & {
+    background: transparent url("../images/cond_bread.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-3 & {
+    background: transparent url("../images/dishwasher.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-4 & {
+    background: transparent url("../images/fastfood.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-5 & {
+    background: transparent url("../images/electromech.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-6 & {
+    background: transparent url("../images/holod.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-7 & {
+    background: transparent url("../images/neitral.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-9 & {
+    background: transparent url("../images/weight.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-10 & {
+    background: transparent url("../images/spartak.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-11 & {
+    background: transparent url("../images/dishes.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-79 & {
+    background: transparent url("../images/teplovoe.jpg") no-repeat scroll 50% 50% / cover;
+  }
+
+  body.page-taxonomy-term-150 & {
+    background: transparent url("../images/steril.jpg") no-repeat scroll 50% 50% / cover;
   }
 }
 
